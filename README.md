@@ -18,7 +18,7 @@ Accurate detection for interactive gameplay.
 ### Win and Game Over Conditions
 Clear feedback with "You Win!" and "Game Over" messages.
 
-### Installation and Usage
-Prerequisites
+## Installation and Usage
+### Prerequisites
 OpenGL development environment
 C++ compiler that supports OpenGL
