@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D52BCDB32ADE9054001037D8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D52BCDB22ADE9054001037D8 /* main.cpp */; };
+		D52BCDBB2ADE9082001037D8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52BCDBA2ADE9082001037D8 /* OpenGL.framework */; };
+		D52BCDBD2ADE93CE001037D8 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52BCDBC2ADE93CE001037D8 /* GLUT.framework */; };
+		D5D770F02ADEFFDD00CDC9FB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D52BCDB22ADE9054001037D8 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,15 @@
 /* Begin PBXFileReference section */
 		D52BCDAF2ADE9054001037D8 /* CoinCollector */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CoinCollector; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52BCDB22ADE9054001037D8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D52BCDBA2ADE9082001037D8 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		D52BCDBC2ADE93CE001037D8 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		D5A46D062ADFE2E30038D9F9 /* SFML-2.5.1 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "SFML-2.5.1"; path = "CoinCollector/SFML-2.5.1"; sourceTree = "<group>"; };
+		D5A46D082ADFE3B50038D9F9 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = "CoinCollector/SFML-2.5.1/include"; sourceTree = "<group>"; };
+		D5A46D0A2ADFE3E80038D9F9 /* Audio.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Audio.hpp; path = "CoinCollector/SFML-2.5.1/include/SFML/Audio.hpp"; sourceTree = "<group>"; };
+		D5D770EC2ADEFFBB00CDC9FB /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		D5D770ED2ADEFFC000CDC9FB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		D5D770EE2ADEFFC700CDC9FB /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		D5D770EF2ADEFFCD00CDC9FB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D52BCDBD2ADE93CE001037D8 /* GLUT.framework in Frameworks */,
+				D52BCDBB2ADE9082001037D8 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +54,11 @@
 		D52BCDA62ADE9054001037D8 = {
 			isa = PBXGroup;
 			children = (
+				D5D770ED2ADEFFC000CDC9FB /* OpenGL.framework */,
+				D5D770EC2ADEFFBB00CDC9FB /* GLUT.framework */,
 				D52BCDB12ADE9054001037D8 /* CoinCollector */,
 				D52BCDB02ADE9054001037D8 /* Products */,
+				D52BCDB92ADE9082001037D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +73,23 @@
 		D52BCDB12ADE9054001037D8 /* CoinCollector */ = {
 			isa = PBXGroup;
 			children = (
+				D5D770EF2ADEFFCD00CDC9FB /* OpenGL.framework */,
+				D5D770EE2ADEFFC700CDC9FB /* GLUT.framework */,
 				D52BCDB22ADE9054001037D8 /* main.cpp */,
 			);
 			path = CoinCollector;
+			sourceTree = "<group>";
+		};
+		D52BCDB92ADE9082001037D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5A46D0A2ADFE3E80038D9F9 /* Audio.hpp */,
+				D5A46D082ADFE3B50038D9F9 /* include */,
+				D5A46D062ADFE2E30038D9F9 /* SFML-2.5.1 */,
+				D52BCDBC2ADE93CE001037D8 /* GLUT.framework */,
+				D52BCDBA2ADE9082001037D8 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D52BCDB32ADE9054001037D8 /* main.cpp in Sources */,
+				D5D770F02ADEFFDD00CDC9FB /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +275,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "GL_SILENCE_DEPRECATION\n";
+				"HEADER_SEARCH_PATHS[arch=*]" = "/usr/local/include\n";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -253,6 +285,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "GL_SILENCE_DEPRECATION\n";
+				"HEADER_SEARCH_PATHS[arch=*]" = "/usr/local/include\n";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
